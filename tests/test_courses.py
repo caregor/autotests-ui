@@ -1,5 +1,8 @@
+import pytest
 from playwright.sync_api import expect, sync_playwright
 
+@pytest.mark.courses
+@pytest.mark.regression
 def test_empty_courses_list():
     REGISTRATION_URL = "https://nikita-filonov.github.io/qa-automation-engineer-ui-course/#/auth/registration"
     E_MAIL = "account@mail.ru"
